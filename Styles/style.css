@@ -4,7 +4,7 @@ body {
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
 
-    font-style: normal;
+  font-style: normal;
     box-sizing: border-box;
     padding: 0;
     margin: 0px;
@@ -12,6 +12,10 @@ body {
 }
 main {
     background-color: rgb(255, 250, 240);
+    /*border: 2px solid  red !important;*/
+    
+    margin-right: 10%;
+    margin-left: 10%;
 }
 header {
     background-color: lightgray;
@@ -69,10 +73,10 @@ button:hover {
 }
 
 .hero-text-container {
-    /* border: 2px solid red;*/
-    height: 75%;
+    border: 2px solid red;
     padding: 10%;
-    margin: 30px;
+    height: fit-content;
+    margin: 25px;
 }
 .hero-text-container .hero-info h1 {
     font-size: 2.5em;
@@ -117,6 +121,7 @@ h2 {
     text-align: center;
     border-top: 2px solid rgb(70, 195, 193);
 }
+
 
 /* Gallery Section with 3 columns  */
 
