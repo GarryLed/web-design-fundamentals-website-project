@@ -87,8 +87,7 @@ main {
     margin-bottom: 8%;
     color: white;
 }
-.hero-text-container h1 { font-size: 2.5em;}
-.hero-text-container h2 {font-size: 1.5em;}
+
 #active {
     border: 2px solid rgb(252, 71, 66);
     border-radius: 1.5em;
@@ -219,12 +218,31 @@ p{
     background-color: rgb(70, 195, 193);
     border-radius: 1.5em;
     padding: 2%;
+    
 }
-#newsletter-text {
+#newsletter-text,
+#signup-form,
+#contact-us-form {
+    flex: 1;
     color: rgb(255, 250, 240);
-    padding: 2%;
+    padding: 2%;   
 }
-
+/* Contact forms */
+.contact-form-container {
+    background-color: rgb(70, 195, 193);
+    padding: 2em;
+    margin: 1em;
+    color: rgb(255, 250, 240);
+    border-radius: 1.5em;
+}
+#contact-us-form{
+    margin: 10%;
+}
+/* psudo element for forms */
+.required::after{
+    content: " *";
+    color: red;
+}
 input[type="text"],
 input[type="submit"],
 input[type="email"] {
@@ -233,7 +251,6 @@ input[type="email"] {
     margin-bottom: 1em;
     width: 80%;
 }
-
 input[type="submit"] {
     background: rgb(252, 71, 66);
     padding: 1em;
@@ -276,16 +293,8 @@ table td {
     color: rgb(34, 34, 34);
     font-weight: bold;
 }
-/* Contact forms */
-.contact-form-container {
-    background-color: rgb(70, 195, 193);
-    padding: 2em;
-    border-radius: 1.5em;
-    margin: 1em;
-}
-#contact-us-form{
-    margin: 10%;
-}
+
+
 /* Footer Section */
 footer {
     padding: 2em;
@@ -295,8 +304,7 @@ footer {
 .flex-footer-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;   
 }
 .footer-sections-container {
     display: flex;

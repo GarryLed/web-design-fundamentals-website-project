@@ -17,7 +17,10 @@
         <!--Keywords for SEO-->
         <meta name="Keywords" content="digital, nomad, travel, remote, work" >
         <meta name="author" content="Garry Ledwith" >
-        <style></style>
+        <style>
+            .hero-text-container h1 { font-size: 2.5em;}
+            .hero-text-container h2 {font-size: 1.5em;}
+        </style>
     </head>
     <body>
         <header>
@@ -62,13 +65,13 @@
                     <section class="column-two">
                         <!--Column two-->
                         <h2>Become a nomad</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit... Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+                        <p>Before becoming a digital nomad, it's a good idea to figure out what it is really like.</p>
                         <a href="newbies.html#best-jobs" class="button-link">Learn More</a>
                     </section>
                     <section class="column-three">
                         <!--Column three-->
-                        <h2>Things you'll need</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit... Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+                        <h2>Line up work</h2>
+                        <p>Be sure to have plenty of gigs lined up before leaving. Before exploring new areas as a digital nomad, it might be best to build up clientele at home</p>
                         <a href="newbies.html#job-search" class="button-link">Learn More</a>
                     </section>
                 </div>
@@ -194,11 +197,15 @@
                         Every week, we share actionable digital nomad tips, inspiring stories, practical travel advice, and curated high-quality resources sent directly to your inbox.
                     </p>
                     <form id="signup-form" action="http://foo.com" method="GET">
-                        <input type="text" id="first-name" name="first-name" placeholder="First Name" required >
-                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required >
-                        <input type="email" id="email" name="email" placeholder="Email" required >
+                        <label class="required" for="first-name">First Name:</label><br>
+                        <input type="text" id="first-name" name="first-name" placeholder="First name" required><br>
+                        <label class="required" for="last-name">Last Name:</label><br>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last name" required><br>
+                        <label class="required" for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Email" required><br>
                         <input type="submit" name="newsletter-button" value="Subscribe" >
                     </form>
+                     
                 </div>
             </div>
         </main>

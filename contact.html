@@ -18,7 +18,10 @@
         <!--Keywords for SEO-->
         <meta name="Keywords" content="digital, nomads, contact, remote, work" >
         <meta name="author" content="Garry Ledwith" >
-        <style></style>
+        <style>
+            .hero-text-container h1 { font-size: 2.5em;}
+            .hero-text-container h2 {font-size: 1.5em;}
+        </style>
     </head>
     <body>
         <header>
@@ -48,21 +51,20 @@
         <main>
             <div class="contact-form-container" id="contact-us-form">
                 <form id="contact-form" action="http://foo.com" method="GET">
-                    <input type="text" id="first-name" name="first-name" placeholder="First name">
-                    <input type="text" id="last-name" name="last-name" placeholder="Last name">
-                    <input type="email" id="email" name="email" placeholder="Email">
-                    <textarea name="message" placeholder="Enter your message here"></textarea>
+                    <label class="required" for="first-name">First Name:</label><br>
+                    <input type="text" id="first-name" name="first-name" placeholder="First name" required><br>
+                    <label class="required" for="last-name">Last Name:</label><br>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last name" required><br>
+                    <label class="required" for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Email" required><br>
+                    <textarea id="message" name="message" placeholder="Enter your message here"></textarea><br>
                     <input type="submit" value="Submit">
-                </form>
+                </form>    
             </div>
         </main>
 
         <footer>
             <div class="flex-footer-container">
-                <div>
-                    <!--logo-->
-                    <!--<img style="width: 50%;" src="Images/digital_nomad_logo.png" alt="logo" >-->
-                </div>
                 <div class="footer-sections-container">
                     <!--Div container for three columns-->
                     <div class="footer-section">
